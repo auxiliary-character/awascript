@@ -5,6 +5,8 @@ Awascript
 
 Awascript is a small esoteric programming language that transpiles to brainfuck. In awascript, each of Brainfuck's 8 command characters are represented by an "awa" with varying capitalization. All other characters are ignored as whitespace.
 
+## Character Table
+
 |awa|character|
 |---|---------|
 |awa|        >|
@@ -16,7 +18,8 @@ Awascript is a small esoteric programming language that transpiles to brainfuck.
 |AWa|        [|
 |AWA|        ]|
 
-As an example,
+
+## Example
 
 ```sh
 $cat example/hello.awa
@@ -31,7 +34,7 @@ $cat example/hello.awa | awascript | bf
 Hello World
 ```
 
-##Install
+## Install
 ```sh
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
